@@ -397,7 +397,6 @@
           "required" : false,
           "type" : "string",
           "default" : "",
-          "pattern" : "^\\s*$|^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$",
           "x-example" : ""
         }, {
           "name" : "endDateTime",
@@ -406,7 +405,6 @@
           "required" : false,
           "type" : "string",
           "default" : "",
-          "pattern" : "^\\s*$|^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$",
           "x-example" : ""
         }, {
           "name" : "onsaleStartDateTime",
@@ -415,7 +413,6 @@
           "required" : false,
           "type" : "string",
           "default" : "",
-          "pattern" : "^\\s*$|^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$",
           "x-example" : ""
         }, {
           "name" : "onsaleEndDateTime",
@@ -424,7 +421,6 @@
           "required" : false,
           "type" : "string",
           "default" : "",
-          "pattern" : "^\\s*$|^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$",
           "x-example" : ""
         }, {
           "name" : "countryCode",
@@ -1017,7 +1013,7 @@
           "type" : "boolean",
           "default" : false
         },
-        "rangeDurationField" : {
+        "leapDurationField" : {
           "$ref" : "#/definitions/DurationField"
         },
         "durationField" : {
@@ -1027,12 +1023,12 @@
           "type" : "integer",
           "format" : "int32"
         },
+        "rangeDurationField" : {
+          "$ref" : "#/definitions/DurationField"
+        },
         "maximumValue" : {
           "type" : "integer",
           "format" : "int32"
-        },
-        "leapDurationField" : {
-          "$ref" : "#/definitions/DurationField"
         },
         "name" : {
           "type" : "string"
@@ -1049,10 +1045,10 @@
     "DateTimeFieldType" : {
       "type" : "object",
       "properties" : {
-        "durationType" : {
+        "rangeDurationType" : {
           "$ref" : "#/definitions/DurationFieldType"
         },
-        "rangeDurationType" : {
+        "durationType" : {
           "$ref" : "#/definitions/DurationFieldType"
         },
         "name" : {
@@ -1097,13 +1093,13 @@
     "DurationField" : {
       "type" : "object",
       "properties" : {
-        "unitMillis" : {
-          "type" : "integer",
-          "format" : "int64"
-        },
         "precise" : {
           "type" : "boolean",
           "default" : false
+        },
+        "unitMillis" : {
+          "type" : "integer",
+          "format" : "int64"
         },
         "name" : {
           "type" : "string"
