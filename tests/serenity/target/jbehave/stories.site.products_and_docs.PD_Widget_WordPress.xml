@@ -1,0 +1,29 @@
+<story path="stories/site/products_and_docs/PD_Widget_WordPress.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">test engineer</inOrderTo>
+  <asA keyword="I want to">test Ticket Master Developer&apos;s site</asA>
+  <iWantTo keyword="So that">I test WordPress Widget Page of Ticket Master Developer&apos;s site</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/wordpress/) Verification for general page&apos;s elements">
+<step outcome="successful">Given open WordPress Widget page</step>
+<step outcome="failed" keyword="FAILED">Then check general page elements for WordPress Widget Page, where DISQUS = <parameter>true</parameter> and LeftMenu = <parameter>true</parameter><failure>net.serenitybdd.core.exceptions.SerenityManagedException: Connect to 127.0.0.1:7058 [/127.0.0.1] failed: Connection refused
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;testing-worker-linux-docker-f5df8b6c-3476-linux-1&apos;, ip: &apos;172.17.2.91&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-40-generic&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: driver.version: unknown</failure></step>
+<failure>net.serenitybdd.core.exceptions.SerenityManagedException: Connect to 127.0.0.1:7058 [/127.0.0.1] failed: Connection refused
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;testing-worker-linux-docker-f5df8b6c-3476-linux-1&apos;, ip: &apos;172.17.2.91&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-40-generic&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: driver.version: unknown
+	at net.serenitybdd.core.exceptions.SerenityManagedException.detachedCopyOf(SerenityManagedException.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:341)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:134)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)
+	at bla.tm.steps.products_and_docs.PD_Widget_WordPressWidgetSteps$$EnhancerByCGLIB$$130fb1a4.checkIfTitleIsCorrect(&lt;generated&gt;)
+	at bla.tm.definitions.site.products_and_docs.PD_Widget_WordPressDefinition.checkGeneralPageElements(PD_Widget_WordPressDefinition.java:19)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</failure>
+</scenario>

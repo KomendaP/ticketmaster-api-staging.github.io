@@ -1,0 +1,100 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/site/widgets/APIKeyReplacementNegative.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> test enfineer</div>
+<div class="element asA"><span class="keyword asA">I want to</span> test Ticket Master Developer's site</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I test API Key is NOT replaced on the page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - Commerce API page) Custom API key is not replaced when user is logged in</h2>
+<div class="step failed">Given open Commerce API page <span class="keyword failed">(FAILED)</span><br/><span class="message failed">net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.firefox.FirefoxDriver</span></div>
+<div class="step notPerformed">When User is logged to site (Commerce API) <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then check that API key is provided for all placeholders on Commerce API page <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<pre class="failure">net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.firefox.FirefoxDriver
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:146)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:133)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:103)
+	at net.thucydides.core.webdriver.WebDriverFacade.openIgnoringHtmlUnitScriptErrors(WebDriverFacade.java:178)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:173)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:831)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:741)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:729)
+	at bla.tm.steps.products_and_docs.PD_CommerceAPISteps.openPage(PD_CommerceAPISteps.java:21)
+	at bla.tm.steps.products_and_docs.PD_CommerceAPISteps$$EnhancerByCGLIB$$d3a7a989.CGLIB$openPage$0(&lt;generated&gt;)
+	at bla.tm.steps.products_and_docs.PD_CommerceAPISteps$$EnhancerByCGLIB$$d3a7a989$$FastClassByCGLIB$$ab6383a6.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:372)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:357)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:332)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:134)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)
+	at bla.tm.steps.products_and_docs.PD_CommerceAPISteps$$EnhancerByCGLIB$$d3a7a989.openPage(&lt;generated&gt;)
+	at bla.tm.definitions.site.products_and_docs.PD_ComerceAPIDefinition.openCommerceAPIPage(PD_ComerceAPIDefinition.java:26)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - Top Picks API page) Custom API key is not replaced when user is logged in</h2>
+<div class="step failed">Given open Top Picks API page <span class="keyword failed">(FAILED)</span><br/><span class="message failed">net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.firefox.FirefoxDriver</span></div>
+<div class="step notPerformed">When User is logged to site (Top Picks API) <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then check that API key is provided for all placeholders on Top Picks API page <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<pre class="failure">net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.firefox.FirefoxDriver
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:146)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:133)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:103)
+	at net.thucydides.core.webdriver.WebDriverFacade.openIgnoringHtmlUnitScriptErrors(WebDriverFacade.java:178)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:173)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:831)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:741)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:729)
+	at bla.tm.steps.products_and_docs.PD_TopPicksAPISteps.openPage(PD_TopPicksAPISteps.java:20)
+	at bla.tm.steps.products_and_docs.PD_TopPicksAPISteps$$EnhancerByCGLIB$$54ce101f.CGLIB$openPage$0(&lt;generated&gt;)
+	at bla.tm.steps.products_and_docs.PD_TopPicksAPISteps$$EnhancerByCGLIB$$54ce101f$$FastClassByCGLIB$$3d836b9b.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:372)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:357)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:332)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:134)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)
+	at bla.tm.steps.products_and_docs.PD_TopPicksAPISteps$$EnhancerByCGLIB$$54ce101f.openPage(&lt;generated&gt;)
+	at bla.tm.definitions.site.products_and_docs.PD_TopPicksAPIDefinition.openTopPicksAPIPage(PD_TopPicksAPIDefinition.java:26)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - Season Ticketing API page) Custom API key is not replaced when user is logged in</h2>
+<div class="step failed">Given open Season Ticketing API page <span class="keyword failed">(FAILED)</span><br/><span class="message failed">net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.firefox.FirefoxDriver</span></div>
+<div class="step notPerformed">When User is logged to site (Season Ticketing API) <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then check that API key is provided for all placeholders on Season Ticketing API page <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<pre class="failure">net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.firefox.FirefoxDriver
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:146)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:133)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:103)
+	at net.thucydides.core.webdriver.WebDriverFacade.openIgnoringHtmlUnitScriptErrors(WebDriverFacade.java:178)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:173)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:831)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:741)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:729)
+	at bla.tm.steps.products_and_docs.PD_SeasonTicketingAPISteps.openPage(PD_SeasonTicketingAPISteps.java:20)
+	at bla.tm.steps.products_and_docs.PD_SeasonTicketingAPISteps$$EnhancerByCGLIB$$ffbeca6d.CGLIB$openPage$0(&lt;generated&gt;)
+	at bla.tm.steps.products_and_docs.PD_SeasonTicketingAPISteps$$EnhancerByCGLIB$$ffbeca6d$$FastClassByCGLIB$$8e5638cb.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:372)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:357)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:332)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:134)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)
+	at bla.tm.steps.products_and_docs.PD_SeasonTicketingAPISteps$$EnhancerByCGLIB$$ffbeca6d.openPage(&lt;generated&gt;)
+	at bla.tm.definitions.site.products_and_docs.PD_SeasonTicketingAPIDefinition.openSeasonTicketingAPIPage(PD_SeasonTicketingAPIDefinition.java:26)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - International Discovery API page) Custom API key is not replaced when user is logged in</h2>

@@ -1,0 +1,41 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/site/pantheon/UserLogIn.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> test enfineer</div>
+<div class="element asA"><span class="keyword asA">I want to</span> test Ticket Master Developer's site</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I test Pantheon User LonIn Page of Ticket Master Developer's site</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (developer-acct.ticketmaster.com/user/login) Verification for general page's elements</h2>
+<div class="step failed">Given open Home page <span class="keyword failed">(FAILED)</span><br/><span class="message failed">net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.firefox.FirefoxDriver</span></div>
+<div class="step notPerformed">When navigate to Pantheon LogIn page from Home page <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then check general page elements for Pantheon User LonIn page <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<pre class="failure">net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.firefox.FirefoxDriver
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:146)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:133)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:103)
+	at net.thucydides.core.webdriver.WebDriverFacade.openIgnoringHtmlUnitScriptErrors(WebDriverFacade.java:178)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:173)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:831)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:741)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:729)
+	at bla.tm.steps.HomePageSteps.openPage(HomePageSteps.java:16)
+	at bla.tm.steps.HomePageSteps$$EnhancerByCGLIB$$2c04ac1b.CGLIB$openPage$0(&lt;generated&gt;)
+	at bla.tm.steps.HomePageSteps$$EnhancerByCGLIB$$2c04ac1b$$FastClassByCGLIB$$e47d005a.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:372)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:357)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:332)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:134)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)
+	at bla.tm.steps.HomePageSteps$$EnhancerByCGLIB$$2c04ac1b.openPage(&lt;generated&gt;)
+	at bla.tm.definitions.site.HomePageDefinition.openHomePage(HomePageDefinition.java:27)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
+</div>
